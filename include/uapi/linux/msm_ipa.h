@@ -435,6 +435,9 @@ enum ipa_ssr_event {
 	IPA_SSR_EVENT_MAX
 };
 
+// compat
+#define WLAN_FWR_SSR_BEFORE_SHUTDOWN IPA_SSR_BEFORE_SHUTDOWN
+
 #define IPA_EVENT_MAX_NUM ((int)IPA_SSR_EVENT_MAX)
 
 /**

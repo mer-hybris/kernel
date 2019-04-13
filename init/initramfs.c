@@ -605,6 +605,15 @@ static void __init clean_rootfs(void)
 }
 #endif
 
+
+static int __init skip_initramfs_param(char *str)
+{
+	if (*str)
+		return 0;
+	return 1;
+}
+__setup("skip_initramfs", skip_initramfs_param);
+
 static int __init populate_rootfs(void)
 {
 	char *err = unpack_to_rootfs(__initramfs_start, __initramfs_size);
