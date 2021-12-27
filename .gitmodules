@@ -26,3 +26,6 @@
 	path = techpack/display
 	url = https://github.com/sonyxperiadev/kernel-techpack-display-driver
         branch = aosp/LA.UM.9.12.r1
+[submodule "techpack/video"]
+	path = techpack/video
+	url = https://github.com/sonyxperiadev/vendor-qcom-opensource-video-driver.git
