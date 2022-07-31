@@ -66,6 +66,7 @@ obj-$(CONFIG_MSM_RDBG)		+= rdbg.o
 obj-$(CONFIG_ADI)		+= adi.o
 obj-$(CONFIG_DIAG_CHAR)		+= diag/
 obj-$(CONFIG_OKL4_PIPE)		+= okl4_pipe.o
+obj-$(CONFIG_LRNG)		+= lrng/
 CFLAGS_okl4_pipe.o			+= -Werror
 obj-$(CONFIG_VSERVICES_SERIAL)		+= vservices_serial.o
 CFLAGS_vservices_serial.o	+= -Werror
