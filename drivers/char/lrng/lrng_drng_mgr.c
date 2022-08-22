@@ -292,7 +292,8 @@ static void lrng_drng_seed(struct lrng_drng *drng)
 		 * If no-one is waiting for the DRNG, seed the atomic DRNG
 		 * directly from the entropy sources.
 		 */
-		if (!wq_has_sleeper(&lrng_init_wait))
+		if (!wq_has_sleeper(&lrng_init_wait) &&
+		    !lrng_ready_chain_has_sleeper())
 			lrng_drng_atomic_seed_es();
 		else
 			lrng_init_ops(NULL);
