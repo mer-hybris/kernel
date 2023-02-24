@@ -1,6 +1,6 @@
 [submodule "techpack/audio"]
 	path = techpack/audio
-	url = https://github.com/sonyxperiadev/kernel-techpack-audio.git
+	url = https://github.com/thaodan/kernel-techpack-audio.git
 	branch = aosp/LA.UM.9.12.r1
 [submodule "techpack/camera"]
 	path = techpack/camera
