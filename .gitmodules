@@ -1,0 +1,52 @@
+[submodule "audio"]
+	path = audio
+	url = https://github.com/sonyxperiadev/kernel-techpack-audio
+	branch = aosp/LA.UM.9.16.r1
+[submodule "camera"]
+	path = camera
+	url = https://github.com/sonyxperiadev/kernel-techpack-camera
+	branch = aosp/LA.UM.9.16.r1
+[submodule "techpack/audio"]
+	path = techpack/audio
+	url = https://github.com/sonyxperiadev/kernel-techpack-audio
+	branch = aosp/LA.UM.9.16.r1
+[submodule "techpack/camera"]
+	path = techpack/camera
+	url = https://github.com/sonyxperiadev/kernel-techpack-camera
+	branch = aosp/LA.UM.9.16.r1
+[submodule "techpack/dataipa"]
+	path = techpack/dataipa
+	url = https://github.com/sonyxperiadev/kernel-techpack-dataipa
+	branch = aosp/LA.UM.9.16.r1
+[submodule "techpack/datarmnet"]
+	path = techpack/datarmnet
+	url = https://github.com/sonyxperiadev/kernel-techpack-datarmnet
+	branch = aosp/LA.UM.9.16.r1
+[submodule "techpack/datarmnet-ext"]
+	path = techpack/datarmnet-ext
+	url = https://github.com/sonyxperiadev/kernel-techpack-datarmnet-ext
+	branch = aosp/LA.UM.9.16.r1
+[submodule "techpack/video"]
+	path = techpack/video
+	url = https://github.com/sonyxperiadev/kernel-techpack-video
+	branch = aosp/LA.UM.9.16.r1
+[submodule "techpack/display"]
+	path = techpack/display
+	url = https://github.com/sonyxperiadev/kernel-techpack-display-driver
+	branch = aosp/LA.UM.9.16.r1
+[submodule "drivers/staging/wlan-qc/fw-api"]
+	path = drivers/staging/wlan-qc/fw-api
+	url = https://github.com/sonyxperiadev/vendor-qcom-opensource-wlan-fw-api
+	branch = aosp/LA.UM.9.16.r1
+[submodule "drivers/staging/wlan-qc/qca-wifi-host-cmn"]
+	path = drivers/staging/wlan-qc/qca-wifi-host-cmn
+	url = https://github.com/sonyxperiadev/vendor-qcom-opensource-wlan-qca-wifi-host-cmn
+	branch = aosp/LA.UM.9.16.r1
+[submodule "drivers/staging/wlan-qc/qcacld-3.0"]
+	path = drivers/staging/wlan-qc/qcacld-3.0
+	url = https://github.com/sonyxperiadev/vendor-qcom-opensource-wlan-qcacld-3.0
+	branch = aosp/LA.UM.9.16.r1
+[submodule "arch/arm64/configs/sony"]
+	path = arch/arm64/configs/sony
+	url = https://github.com/sonyxperiadev/kernel-defconfig
+	branch = aosp/LA.UM.9.16.r1
