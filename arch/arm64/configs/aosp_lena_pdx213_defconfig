@@ -938,3 +938,6 @@ CONFIG_PM_AUTOSLEEP=y
 
 # network debugging
 CONFIG_NET_DROP_MONITOR=y
+
+# dynamic debugging
+CONFIG_DYNAMIC_DEBUG=y
