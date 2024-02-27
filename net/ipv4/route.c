@@ -959,28 +959,36 @@ static int ip_error(struct sk_buff *skb)
 	struct net *net;
 	bool send;
 	int code;
+	int index = IPCB(skb)->iif;
 
 	if (netif_is_l3_master(skb->dev)) {
 		dev = __dev_get_by_index(dev_net(skb->dev), IPCB(skb)->iif);
-		if (!dev)
+		if (!dev) {
+			printk(KERN_INFO "No dev for idx %d", index);
 			goto out;
+		}
 	}
 
 	in_dev = __in_dev_get_rcu(dev);
 
 	/* IP on this device is disabled. */
-	if (!in_dev)
+	if (!in_dev) {
+		printk(KERN_INFO "IP disabled on in_dev idx %d", index);
 		goto out;
+	}
 
 	net = dev_net(rt->dst.dev);
 	if (!IN_DEV_FORWARD(in_dev)) {
+		printk(KERN_INFO "in_dev idx %d not set to forwarding", index);
 		switch (rt->dst.error) {
 		case EHOSTUNREACH:
 			__IP_INC_STATS(net, IPSTATS_MIB_INADDRERRORS);
+			printk(KERN_INFO "host unreach");
 			break;
 
 		case ENETUNREACH:
 			__IP_INC_STATS(net, IPSTATS_MIB_INNOROUTES);
+			printk(KERN_INFO "net unreach");
 			break;
 		}
 		goto out;
@@ -992,13 +1000,16 @@ static int ip_error(struct sk_buff *skb)
 		goto out;
 	case EHOSTUNREACH:
 		code = ICMP_HOST_UNREACH;
+		printk(KERN_INFO "host unreach");
 		break;
 	case ENETUNREACH:
 		code = ICMP_NET_UNREACH;
 		__IP_INC_STATS(net, IPSTATS_MIB_INNOROUTES);
+		printk(KERN_INFO "net unreach");
 		break;
 	case EACCES:
 		code = ICMP_PKT_FILTERED;
+		printk(KERN_INFO "packet filtered (EACCESS)");
 		break;
 	}
 
@@ -1018,8 +1029,10 @@ static int ip_error(struct sk_buff *skb)
 			send = false;
 		inet_putpeer(peer);
 	}
-	if (send)
+	if (send) {
+		printk(KERN_INFO "sending ICMP dest unreach");
 		icmp_send(skb, ICMP_DEST_UNREACH, code, 0);
+	}
 
 out:	kfree_skb(skb);
 	return 0;
