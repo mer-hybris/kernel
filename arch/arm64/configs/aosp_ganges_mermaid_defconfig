@@ -932,3 +932,6 @@ CONFIG_CGROUP_SCHEDTUNE=n
 
 # hybris: usb mass storage
 CONFIG_USB_CONFIGFS_MASS_STORAGE=y
+
+# network debugging
+CONFIG_NET_DROP_MONITOR=y
