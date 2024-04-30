@@ -1,4 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0-only
 # ignore all subdirs except stub
 !/stub/
-*/
+
+# Contrary to Sony AOSP we want to have the Qualcomm drivers as submodules
+#*/
