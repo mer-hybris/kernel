@@ -1,0 +1,51 @@
+[submodule "techpack/audio"]
+	path = techpack/audio
+	url = https://github.com/sonyxperiadev/kernel-techpack-audio.git
+[submodule "techpack/bt"]
+	path = techpack/bt
+	url = https://github.com/sonyxperiadev/kernel-techpack-bt-kernel.git
+[submodule "techpack/camera"]
+	path = techpack/camera
+	url = https://github.com/sonyxperiadev/kernel-techpack-camera.git
+[submodule "techpack/dataipa"]
+	path = techpack/dataipa
+	url = https://github.com/sonyxperiadev/kernel-techpack-dataipa.git
+[submodule "techpack/datarmnet"]
+	path = techpack/datarmnet
+	url = https://github.com/sonyxperiadev/kernel-techpack-datarmnet.git
+[submodule "techpack/datarmnet-ext"]
+	path = techpack/datarmnet-ext
+	url = https://github.com/sonyxperiadev/kernel-techpack-datarmnet-ext.git
+[submodule "techpack/display"]
+	path = techpack/display
+	url = https://github.com/sonyxperiadev/kernel-techpack-display-driver.git
+[submodule "techpack/eva"]
+	path = techpack/eva
+	url = https://github.com/sonyxperiadev/kernel-techpack-eva.git
+[submodule "techpack/graphics"]
+	path = techpack/graphics
+	url = https://github.com/sonyxperiadev/kernel-techpack-graphics-kernel.git
+[submodule "techpack/mm"]
+	path = techpack/mm
+	url = https://github.com/sonyxperiadev/kernel-techpack-mm-drivers.git
+[submodule "techpack/mmrm"]
+	path = techpack/mmrm
+	url = https://github.com/sonyxperiadev/kernel-techpack-mmrm.git
+[submodule "techpack/securemsm"]
+	path = techpack/securemsm
+	url = https://github.com/sonyxperiadev/kernel-techpack-securemsm-kernel.git
+[submodule "techpack/video"]
+	path = techpack/video
+	url = https://github.com/sonyxperiadev/kernel-techpack-video.git
+[submodule "techpack/wlan"]
+	path = techpack/wlan
+	url = https://github.com/sonyxperiadev/vendor-qcom-opensource-wlan-platform.git
+[submodule "drivers/staging/wlan-qc/fw-api"]
+	path = drivers/staging/wlan-qc/fw-api
+	url = https://github.com/sonyxperiadev/vendor-qcom-opensource-wlan-fw-api.git
+[submodule "drivers/staging/wlan-qc/qca-wifi-host-cmn"]
+	path = drivers/staging/wlan-qc/qca-wifi-host-cmn
+	url = https://github.com/sonyxperiadev/vendor-qcom-opensource-wlan-qca-wifi-host-cmn.git
+[submodule "drivers/staging/wlan-qc/qcald-3.0"]
+	path = drivers/staging/wlan-qc/qcacld-3.0
+	url = https://github.com/sonyxperiadev/vendor-qcom-opensource-wlan-qcacld-3.0.git
