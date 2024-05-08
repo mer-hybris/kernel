@@ -1066,3 +1066,7 @@ CONFIG_INET_AH=y
 CONFIG_IP_NF_MATCH_RPFILTER=y
 CONFIG_QUOTA_NETLINK_INTERFACE=y
 CONFIG_INET6_AH=y
+
+# Android mandates to use a user mode helper when the kernel has to call userspace
+# programs to handle things such as core dumps but we don't do that
+CONFIG_STATIC_USERMODEHELPER=n
