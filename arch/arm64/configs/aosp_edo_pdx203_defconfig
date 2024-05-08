@@ -938,3 +938,7 @@ CONFIG_PM_AUTOSLEEP=y
 CONFIG_HARDEN_BRANCH_PREDICTOR=y
 
 CONFIG_WIREGUARD=y
+
+# Android mandates to use a user mode helper when the kernel has to call userspace
+# programs to handle things such as core dumps but we don't do that
+CONFIG_STATIC_USERMODEHELPER=n
