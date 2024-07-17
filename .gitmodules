@@ -1,0 +1,3 @@
+[submodule "wireguard-linux-compat"]
+	path = wireguard-linux-compat
+	url = https://github.com/mer-hybris/wireguard-linux-compat.git
