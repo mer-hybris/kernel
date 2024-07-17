@@ -7,3 +7,6 @@
 [submodule "drivers/staging/wlan-qc/fw-api"]
 	path = drivers/staging/wlan-qc/fw-api
 	url = https://github.com/sonyxperiadev/vendor-qcom-opensource-wlan-fw-api
+[submodule "wireguard-linux-compat"]
+	path = wireguard-linux-compat
+	url = https://github.com/mer-hybris/wireguard-linux-compat.git
