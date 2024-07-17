@@ -50,3 +50,6 @@
 	path = arch/arm64/configs/sony
 	url = https://github.com/sonyxperiadev/kernel-defconfig
 	branch = aosp/LA.UM.9.16.r1
+[submodule "wireguard-linux-compat"]
+	path = wireguard-linux-compat
+	url = https://github.com/mer-hybris/wireguard-linux-compat.git
