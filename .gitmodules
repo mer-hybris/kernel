@@ -13,3 +13,6 @@
 [submodule "drivers/staging/wlan-qc/qca-wifi-host-cmn"]
 	path = drivers/staging/wlan-qc/qca-wifi-host-cmn
 	url = https://github.com/sonyxperiadev/vendor-qcom-opensource-wlan-qca-wifi-host-cmn.git
+[submodule "wireguard-linux-compat"]
+	path = wireguard-linux-compat
+	url = https://github.com/mer-hybris/wireguard-linux-compat.git
